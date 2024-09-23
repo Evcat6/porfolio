@@ -1,0 +1,19 @@
+:root {
+  --background-color: #FFF;
+  --text-color: #1a1a1a;
+  --border-gray: #c6c6c6
+}
+
+[data-theme="dark"] {
+  --background-color: #201F1F;
+  --text-color: #FFF;
+}
+
+body {
+  background-color: var(--background-color);
+  scroll-behavior: smooth;
+}
+
+* {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,60 @@
+.container {
+    padding: 120px 180px 165px 180px;
+}
+
+.greeting_title {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--text-color);
+}
+
+.title {
+    font-size: 96px;
+    font-weight: 500;
+    line-height: 110px;
+    background: linear-gradient(89.81deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    color: var(--text-color);
+}
+
+.description {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    font-style: normal;
+    color: var(--text-color);
+}
+
+.btn_ssh_container {
+    padding-top: 50px;
+}
+
+.btn_ssh {
+    padding: 13px;
+    border-radius: 15px;
+    border: 3px solid transparent;
+    transition: all 120ms ease-in-out;
+    background: 
+        linear-gradient(var(--background-color), var(--background-color)) padding-box,
+        linear-gradient(89.81deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%) border-box;
+}
+
+.btn_ssh a {
+    color: var(--text-color);
+    transition: all 120ms ease-in-out;
+}
+
+.btn_ssh:hover {
+    border-radius: 10px;
+    border-color: #3e3d39;
+    background: none;
+    background-color: #2d0922;
+}
+
+.btn_ssh:hover a {
+    color: #89d432;
+    text-decoration: none;
+}
