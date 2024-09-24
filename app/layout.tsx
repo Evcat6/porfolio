@@ -6,8 +6,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ThemeManager } from "@/components/ThemeManager";
 
-
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Yevhen Kotliarchuk",
@@ -18,11 +17,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   return (
     <html lang="en">
       <body data-theme className={inter.className}>
-        <ThemeManager/>
+        <ThemeManager />
         <Header></Header>
         {children}
         <Footer></Footer>

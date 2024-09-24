@@ -42,7 +42,8 @@
   border-radius: 15px;
   border: 3px solid transparent;
   transition: all 120ms ease-in-out;
-  background: linear-gradient(var(--background-color), var(--background-color))
+  background:
+    linear-gradient(var(--background-color), var(--background-color))
       padding-box,
     linear-gradient(89.81deg, #9845e8 -1.72%, #33d2ff 54.05%, #dd5789 99.78%)
       border-box;
