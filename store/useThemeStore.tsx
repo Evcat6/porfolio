@@ -31,10 +31,6 @@ const useThemeStore = create<Store>()((set, get) => ({
     document.body.setAttribute("data-theme", isDark ? "dark" : "light");
     set(() => ({ theme: isDark ? "dark" : "light" }));
   },
-  // loadTheme: () => {
-  //   const theme =  document.body.getAttribute("data-theme");
-  //   set(() => ({ theme: theme as string }));
-  // }
 }));
 
 export { useThemeStore };
