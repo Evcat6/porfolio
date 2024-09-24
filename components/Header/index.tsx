@@ -13,11 +13,11 @@ const Header = () => {
       <h2 className={styles.left_title}>DR.</h2>
       <nav className={styles.navigation_container}>
         <ul className={styles.navigation_list}>
-          <li>
+          {/* <li>
             <Link href="#">Projects</Link>
-          </li>
+          </li> */}
           <li>
-            <Link href="">Resume</Link>
+            <Link href="#experience">Experience</Link>
           </li>
           <li>
             <Link href="#contact">Contact</Link>

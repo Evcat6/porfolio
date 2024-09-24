@@ -4,9 +4,9 @@ import Image from "next/image";
 import emailBlackIcon from "@/public/email-black-icon.webp";
 import gitHubBlackIcon from "@/public/github-black-icon.webp";
 import linkedinBlackIcon from "@/public/linkedin-black-icon.webp";
-import emailWhiteIcon from "@/public/email-black-icon.webp";
-import gitHubWhiteIcon from "@/public/github-black-icon.webp";
-import linkedinWhiteIcon from "@/public/linkedin-black-icon.webp";
+import emailWhiteIcon from "@/public/email-white-icon.webp";
+import gitHubWhiteIcon from "@/public/github-white-icon.webp";
+import linkedinWhiteIcon from "@/public/linkedin-white-icon.webp";
 import { useThemeStore } from "@/store/useThemeStore";
 
 const Footer = () => {

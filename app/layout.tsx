@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import "./reset.css";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
-import { ThemeManager } from "@/components/ThemeManager";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+import { Inter } from "next/font/google";
+import { ThemeManager } from "@/components/theme-manager";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,11 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body data-theme className={inter.className}>
+      <body className={inter.className}>
         <ThemeManager />
         <Header></Header>
         {children}
-        <Footer></Footer>
+      <Footer />
       </body>
     </html>
   );

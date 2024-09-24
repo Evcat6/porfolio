@@ -1,5 +1,11 @@
-import { Overview } from "@/components/Overview";
+import { Experience } from "@/components/experience";
+import { Overview } from "@/components/overview";
 
 export default function Home() {
-  return <Overview></Overview>;
+  return (
+    <>
+      <Overview />
+      <Experience/>
+    </>
+  );
 }

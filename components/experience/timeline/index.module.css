@@ -1,0 +1,7 @@
+.container {
+    list-style: none;
+    padding: 55px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
