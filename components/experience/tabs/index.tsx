@@ -4,7 +4,7 @@ import { Tab } from "./tab";
 import styles from "./index.module.css";
 
 type Props = {
-  onChangeTab: (tab: any) => void;
+  onChangeTab: (tab: "positions" | "certificates" | "conferences") => void;
   tab: string;
   tabsLabels: {
     value: string;
@@ -14,7 +14,7 @@ type Props = {
 
 const Tabs = ({ onChangeTab, tab, tabsLabels }: Props) => {
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    onChangeTab(e.target.value);
+    onChangeTab(e.target.value as "positions" | "certificates" | "conferences");
   };
   return (
     <nav className={styles.container}>

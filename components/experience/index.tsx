@@ -4,7 +4,7 @@ import styles from "./index.module.css";
 import { Tabs } from "./tabs";
 import { Timeline } from "./timeline";
 
-const TABS_LABELS: { value: keyof typeof TABS_VALUES, label: string }[] = [
+const TABS_LABELS: { value: "positions" | "certificates" | "conferences", label: string }[] = [
   {
     value: "positions",
     label: "Positions",
