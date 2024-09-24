@@ -3,3 +3,9 @@
     flex-direction: row;
     column-gap: 13px;
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        column-gap: 10px;
+    }
+}

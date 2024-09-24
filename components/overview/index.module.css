@@ -6,6 +6,7 @@
   font-size: 16px;
   font-weight: 300;
   color: var(--text-color);
+  animation: .5s ease-out render;
 }
 
 .title {
@@ -23,6 +24,17 @@
   background-clip: text;
   text-fill-color: transparent;
   color: var(--text-color);
+  animation: 1.5s ease-out render;
+}
+
+@keyframes render {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .description {
@@ -52,6 +64,7 @@
 .btn_ssh a {
   color: var(--text-color);
   transition: all 120ms ease-in-out;
+  font-size: 16px;
 }
 
 .btn_ssh:hover {
@@ -64,4 +77,44 @@
 .btn_ssh:hover a {
   color: #89d432;
   text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 40px 140px 125px 140px;
+  }
+
+  .title {
+    font-size: 85px;
+    line-height: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 25px 50px 35px 50px;
+  }
+
+  .title {
+    line-height: 60px;
+    font-size: 50px;
+  }
+
+  .description {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .btn_ssh a {
+    font-size: 12px;
+  }
+
+  .btn_ssh_container {
+    padding-top: 30px;
+  }
+
+  .greeting_title {
+    font-size: 14px;
+  }
+  
 }
