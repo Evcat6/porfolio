@@ -36,3 +36,7 @@
     color: var(--text-color);
     text-decoration: none;
 }
+
+.sun_btn {
+    cursor: pointer;
+}
