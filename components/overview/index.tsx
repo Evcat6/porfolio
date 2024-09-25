@@ -1,10 +1,10 @@
 import styles from "./index.module.css";
 
-const Overview = () => {
+const Overview = ({ name }: { name: string }) => {
   return (
     <section className={styles.container}>
       <span className={styles.greeting_title}>Hey, I&apos;m</span>
-      <h1 className={styles.title}>Yevhen Kotliarchuk</h1>
+      <h1 className={styles.title}>{name}</h1>
       <article className={styles.description}>
         I&apos;m a digital enthusiast with a zest for adventure, dedicated to
         harnessing technology for creative problem-solving. I enjoy sharing

@@ -1,33 +1,33 @@
 .tab {
-    color: var(--text-color);
-    height: 43px;
-    width: 160px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    border-radius: 4px;
-    cursor: pointer;
+  color: var(--text-color);
+  height: 43px;
+  width: 160px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .tab.active {
-    background-color: #1F1E1E;
-    color: #F0F0F0;
+  background-color: #1f1e1e;
+  color: #f0f0f0;
 }
 
 [data-theme="dark"] .tab.active {
-    background-color: #323030;
-    color: #F0F0F0;
+  background-color: #323030;
+  color: #f0f0f0;
 }
 
 .input {
-    display: none;
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
-    .tab {
-        font-size: 14px;
-        height: 40px;
-    }
+  .tab {
+    font-size: 14px;
+    height: 40px;
+  }
 }

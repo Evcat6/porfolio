@@ -1,14 +1,13 @@
 .container {
-    list-style: none;
-    padding: 55px 0;
-    display: flex;
-    flex-direction: column;
-    row-gap: 15px;
+  list-style: none;
+  padding: 55px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
 }
 
-
 @media screen and (max-width: 768px) {
-    .container {
-      padding-left: 20px;
-    }
+  .container {
+    padding-left: 20px;
+  }
 }

@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import styles from "./index.module.css";
 
@@ -22,7 +22,11 @@ const TimelineItem = ({
       <h2 className={styles.title}>{title}</h2>
       <div className={styles.details}>
         <span className={styles.date}>{date}</span>
-        <span><a className={styles.link} href={link}>{link_title}</a></span>
+        <span>
+          <a className={styles.link} href={link}>
+            {link_title}
+          </a>
+        </span>
         <p className={styles.description}>{description}</p>
       </div>
     </li>

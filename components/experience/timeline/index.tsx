@@ -1,5 +1,5 @@
 import { ItemProps, TimelineItem } from "./timeline-item";
-import styles from './index.module.css';
+import styles from "./index.module.css";
 
 type Props = {
   items: ItemProps[];
@@ -7,7 +7,7 @@ type Props = {
 
 const Timeline = ({ items }: Props) => {
   return (
-    <ul className={styles.container} >
+    <ul className={styles.container}>
       {items.map((item, i) => (
         <TimelineItem
           key={i}

@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ThemeManager />
-        <main className="content-wrap" >
+        <main className="content-wrap">
           <Header />
           {children}
         </main>

@@ -10,7 +10,7 @@ type Props = {
     value: string;
     label: string;
   }[];
-}
+};
 
 const Tabs = ({ onChangeTab, tab, tabsLabels }: Props) => {
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
