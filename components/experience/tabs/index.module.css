@@ -7,5 +7,6 @@
 @media screen and (max-width: 768px) {
     .container {
         column-gap: 10px;
+        justify-content: center;
     }
 }

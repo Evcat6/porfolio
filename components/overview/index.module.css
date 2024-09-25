@@ -1,5 +1,5 @@
 .container {
-  padding: 120px 180px 165px 180px;
+  padding: 120px 180px;
 }
 
 .greeting_title {
@@ -81,7 +81,7 @@
 
 @media screen and (max-width: 1024px) {
   .container {
-    padding: 40px 140px 125px 140px;
+    padding: 40px 140px 60px 140px;
   }
 
   .title {
@@ -92,7 +92,7 @@
 
 @media screen and (max-width: 768px) {
   .container {
-    padding: 25px 50px 35px 50px;
+    padding: 25px 35px 35px 35px;
   }
 
   .title {
@@ -103,6 +103,11 @@
   .description {
     font-size: 12px;
     line-height: 18px;
+  }
+
+  .btn_ssh {
+    padding: 10px;
+    border-width: 2px;
   }
 
   .btn_ssh a {

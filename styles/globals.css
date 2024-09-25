@@ -12,6 +12,12 @@
 body {
   background-color: var(--background-color);
   scroll-behavior: smooth;
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 100px;
 }
 
 * {

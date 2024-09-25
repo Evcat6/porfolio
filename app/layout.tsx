@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import "./reset.css";
+import "@/styles/globals.css";
+import "@/styles/reset.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { Inter } from "next/font/google";
 import { ThemeManager } from "@/components/theme-manager";
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,10 +22,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ThemeManager />
-        <Header/>
-        {children}
-        <Analytics/>
-      <Footer />
+        <main className="content-wrap" >
+          <Header />
+          {children}
+        </main>
+        <Footer />
+        <Analytics />
       </body>
     </html>
   );

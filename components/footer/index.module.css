@@ -9,7 +9,11 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 180px;
+  padding: 0 180px;
+  height: 130px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .btn_contact_container {
@@ -47,17 +51,21 @@
     flex-direction: column;
     row-gap: 20px;
   }
+
+  .btn_contact_container {
+    padding-left: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .container {
-    padding: 12px 5px;
-    row-gap: 14px;
+    padding: 18px 5px;
+    row-gap: 18px;
+    height: 100px;
   }
 
   .btn_contact_container {
     column-gap: 0;
-    padding-left: 0;
   }
 
   .btn_contact {
@@ -67,8 +75,7 @@
   }
 
   .btn_contact span {
-    line-height: 14px;
-    font-size: 12px;
+    display: none;
   }
 
   .left_title {
