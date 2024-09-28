@@ -12,7 +12,7 @@ const Overview = ({ name }: { name: string }) => {
       </article>
       <div className={styles.btn_ssh_container}>
         <button className={styles.btn_ssh}>
-          <a href="">ssh {process.env.SSH_DOMAIN_NAME}</a>
+          <a href={`https://${process.env.SSH_DOMAIN_NAME}`}>ssh guest@{process.env.SSH_DOMAIN_NAME}</a>
         </button>
       </div>
     </section>
