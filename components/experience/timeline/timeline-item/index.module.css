@@ -36,7 +36,7 @@
   inline-size: 12px;
   block-size: 12px;
   content: "";
-  border: 2px solid #6cace4;
+  border: 2px solid #4178A0;
   border-radius: 50%;
   position: absolute;
   inset-block-start: 50%;
@@ -56,6 +56,6 @@
 }
 
 .link {
-  color: #6cace4;
+  color: #4178A0;
   font-size: 14px;
 }
