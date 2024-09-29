@@ -20,6 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <meta
+        name="description"
+        content="Yevhen Kotliarchuk's personal page - Fullstack Node.js developer with experience in building web applications and backend solutions. Check out his projects and professional background."
+      />
       <body className={inter.className}>
         <ThemeManager />
         <main className="content-wrap">
