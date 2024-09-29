@@ -18,7 +18,7 @@ const Footer = () => {
       <ul className={styles.btn_contact_container}>
         <li>
           <a
-            href={`mailto:${envConfig.CONTACT.DOMAIN}`}
+            href={`mailto:${envConfig.CONTACT.EMAIL}`}
             className={styles.btn_contact}
           >
             <Image
