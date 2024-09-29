@@ -58,4 +58,9 @@
   .navigation_list li a {
     font-size: 14px;
   }
+
+
+  .navigation_list li:not(:last-child) {
+    display: none;
+  }
 }

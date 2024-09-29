@@ -5,6 +5,7 @@ import sunFillBlack from "@/public/sun-fill-black-icon.webp";
 import sunFillWhite from "@/public/sun-fill-white-icon.webp";
 import Image from "next/image";
 import { useThemeStore } from "@/store/useThemeStore";
+import { envConfig } from "@/config";
 
 const Header = () => {
   const { theme, toggleTheme } = useThemeStore();
@@ -21,6 +22,9 @@ const Header = () => {
           </li>
           <li>
             <Link href="#contact">Contact</Link>
+          </li>
+          <li>
+            <a href={envConfig.CV.URL} target="_blank" >CV</a>
           </li>
         </ul>
         <Image

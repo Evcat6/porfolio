@@ -8,6 +8,7 @@ import emailWhiteIcon from "@/public/email-white-icon.webp";
 import gitHubWhiteIcon from "@/public/github-white-icon.webp";
 import linkedinWhiteIcon from "@/public/linkedin-white-icon.webp";
 import { useThemeStore } from "@/store/useThemeStore";
+import { envConfig } from '@/config';
 
 const Footer = () => {
   const { theme } = useThemeStore();
@@ -17,7 +18,7 @@ const Footer = () => {
       <ul className={styles.btn_contact_container}>
         <li>
           <a
-            href={`mailto:${process.env.CONTACT_DOMAIN}`}
+            href={`mailto:${envConfig.CONTACT.DOMAIN}`}
             className={styles.btn_contact}
           >
             <Image
@@ -30,7 +31,7 @@ const Footer = () => {
           </a>
         </li>
         <li>
-          <a href={process.env.CONTACT_LINKEDIN} className={styles.btn_contact}>
+          <a href={envConfig.CONTACT.LINKEDIN} className={styles.btn_contact}>
             <Image
               src={theme === "dark" ? linkedinWhiteIcon : linkedinBlackIcon}
               width={24}
@@ -41,7 +42,7 @@ const Footer = () => {
           </a>
         </li>
         <li>
-          <a href={process.env.CONTACT_GITHUB} className={styles.btn_contact}>
+          <a href={envConfig.CONTACT.GITHUB} className={styles.btn_contact}>
             <Image
               src={theme === "dark" ? gitHubWhiteIcon : gitHubBlackIcon}
               width={24}
