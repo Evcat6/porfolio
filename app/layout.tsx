@@ -5,7 +5,7 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { Inter } from "next/font/google";
 import { ThemeManager } from "@/components/theme-manager";
-import { Analytics } from "@vercel/analytics/react";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head></head>
       <meta
         name="description"
         content="Yevhen Kotliarchuk's personal page - Fullstack Node.js developer with experience in building web applications and backend solutions. Check out his projects and professional background."
@@ -31,8 +32,8 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
-        <Analytics />
       </body>
+      <GoogleAnalytics gaId="GTM-P9W8NMSD" />
     </html>
   );
 }
