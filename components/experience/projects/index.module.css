@@ -71,5 +71,24 @@
   .projects_container {
     grid-template-columns: 1fr;
     row-gap: 30px;
+    margin-top: 40px;
+  }
+
+  .project_title {
+    font-size: 18px;
+  }
+
+  .project_description {
+    font-size: 14px;
+  }
+
+  .project_technologies {
+    line-height: 20px;
+    font-size: 12px;
+  }
+
+  .project_info_container {
+    margin-top: 15px;
+    row-gap: 5px;
   }
 }
