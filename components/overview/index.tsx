@@ -1,5 +1,5 @@
 import styles from "./index.module.css";
-import { envConfig } from '@/config';
+import { envConfig } from "@/config";
 
 const Overview = ({ name }: { name: string }) => {
   return (
@@ -13,7 +13,9 @@ const Overview = ({ name }: { name: string }) => {
       </article>
       <div className={styles.btn_ssh_container}>
         <button className={styles.btn_ssh}>
-          <a href={`https://${envConfig.SSH.DOMAIN.NAME}`}>ssh guest@{envConfig.SSH.DOMAIN.NAME}</a>
+          <a href={`https://${envConfig.SSH.DOMAIN.NAME}`}>
+            ssh guest@{envConfig.SSH.DOMAIN.NAME}
+          </a>
         </button>
       </div>
     </section>

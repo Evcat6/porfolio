@@ -27,7 +27,9 @@ const Header = () => {
             <Link href="#projects">Projects</Link>
           </li>
           <li>
-            <a href={envConfig.CV.URL} target="_blank" >CV</a>
+            <a href={envConfig.CV.URL} target="_blank">
+              CV
+            </a>
           </li>
         </ul>
         <Image

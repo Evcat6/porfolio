@@ -1,14 +1,14 @@
 :root {
   --background-color: #fff;
   --text-color-white: #1a1a1a;
-  --text-color-blue: #4178A0;
-  --text-color-gray: #1A1A1A;
+  --text-color-blue: #4178a0;
+  --text-color-gray: #1a1a1a;
   --border-gray: #c6c6c6;
 }
 
 [data-theme="dark"] {
   --background-color: #201f1f;
-  --text-color-blue: #4178A0;
+  --text-color-blue: #4178a0;
   --text-color-white: #fff;
   --text-color-gray: #c4c4c4;
 }

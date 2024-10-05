@@ -8,7 +8,7 @@ import emailWhiteIcon from "@/public/email-white-icon.webp";
 import gitHubWhiteIcon from "@/public/github-white-icon.webp";
 import linkedinWhiteIcon from "@/public/linkedin-white-icon.webp";
 import { useThemeStore } from "@/store/useThemeStore";
-import { envConfig } from '@/config';
+import { envConfig } from "@/config";
 
 const Footer = () => {
   const { theme } = useThemeStore();

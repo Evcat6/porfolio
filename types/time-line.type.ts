@@ -1,10 +1,17 @@
 type TimeLine = {
   name: string;
   overview: string;
-  positions: TimeLineExperienceItem[];
+  contacts: TimeLineContacts;
+  positions: TimeLinePositionItem[];
   certificates: TimeLineExperienceItem[];
   conferences: TimeLineExperienceItem[];
   projects: TimeLineProjectItem[];
+};
+
+type TimeLineContacts = {
+  email: string;
+  github: string;
+  linkedin: string;
 };
 
 type TimeLineExperienceItem = {
@@ -12,8 +19,9 @@ type TimeLineExperienceItem = {
   title: string;
   link: string;
   link_title: string;
-  description?: string;
 };
+
+type TimeLinePositionItem = TimeLineExperienceItem & { description: string };
 
 type TimeLineProjectItem = {
   title: string;
@@ -24,4 +32,10 @@ type TimeLineProjectItem = {
   technologies: string[];
 };
 
-export type { TimeLine, TimeLineExperienceItem, TimeLineProjectItem };
+export type {
+  TimeLine,
+  TimeLineExperienceItem,
+  TimeLineProjectItem,
+  TimeLineContacts,
+  TimeLinePositionItem,
+};

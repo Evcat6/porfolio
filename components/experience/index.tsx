@@ -4,10 +4,12 @@ import styles from "./index.module.css";
 import { Tabs } from "./tabs";
 import { Timeline } from "./timeline";
 import { TimeLine } from "@/types";
-import { Projects } from './projects';
+import { Projects } from "./projects";
+
+type TabValue = "positions" | "certificates" | "conferences";
 
 const TABS_LABELS: {
-  value: keyof Omit<TimeLine, "name" | "overview" | "projects">;
+  value: TabValue;
   label: string;
 }[] = [
   {
@@ -25,9 +27,7 @@ const TABS_LABELS: {
 ];
 
 const Experience = ({ timeLine }: { timeLine: TimeLine }) => {
-  const [tab, setTab] = useState<keyof Omit<TimeLine, "name" | "overview" | "projects">>(
-    TABS_LABELS[0].value
-  );
+  const [tab, setTab] = useState<TabValue>(TABS_LABELS[0].value);
 
   return (
     <section id="experience" className={styles.container}>

@@ -27,7 +27,7 @@ const TimelineItem = ({
             {link_title}
           </a>
         </span>
-        <p className={styles.description}>{description}</p>
+        {description && <p className={styles.description}>{description}</p>}
       </div>
     </li>
   );
