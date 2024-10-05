@@ -26,7 +26,7 @@
 .title {
   font-size: 16px;
   font-weight: 400;
-  color: var(--text-color);
+  color: var(--text-color-white);
   padding-left: 20px;
   position: relative;
 }
@@ -36,7 +36,7 @@
   inline-size: 12px;
   block-size: 12px;
   content: "";
-  border: 2px solid #4178A0;
+  border: 2px solid var(--text-color-blue);
   border-radius: 50%;
   position: absolute;
   inset-block-start: 50%;
@@ -47,7 +47,7 @@
 .date {
   font-size: 14px;
   font-weight: 300;
-  color: var(--text-color);
+  color: var(--text-color-white);
 }
 
 .description {
@@ -56,6 +56,6 @@
 }
 
 .link {
-  color: #4178A0;
+  color: var(--text-color-blue);
   font-size: 14px;
 }

@@ -1,6 +1,6 @@
 import { Experience } from "@/components/experience";
 import { Overview } from "@/components/overview";
-import { TimeLine } from "@/types/time-line.type";
+import { TimeLine } from "@/types";
 import { envConfig } from '@/config';
 
 export default async function Home() {

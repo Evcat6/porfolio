@@ -1,16 +1,27 @@
 type TimeLine = {
   name: string;
   overview: string;
-  positions: TimeLineItem[];
-  certificates: TimeLineItem[];
-  conferences: TimeLineItem[];
+  positions: TimeLineExperienceItem[];
+  certificates: TimeLineExperienceItem[];
+  conferences: TimeLineExperienceItem[];
+  projects: TimeLineProjectItem[];
 };
 
-type TimeLineItem = {
+type TimeLineExperienceItem = {
   date: string;
   title: string;
   link: string;
   link_title: string;
+  description?: string;
 };
 
-export type { TimeLine, TimeLineItem };
+type TimeLineProjectItem = {
+  title: string;
+  description: string;
+  github_link: string;
+  web_page_link?: string;
+  preview_link: string;
+  technologies: string[];
+};
+
+export type { TimeLine, TimeLineExperienceItem, TimeLineProjectItem };

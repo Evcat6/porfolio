@@ -1,5 +1,5 @@
 .left_title {
-  color: var(--text-color);
+  color: var(--text-color-white);
   font-weight: 300;
   font-size: 16px;
 }
@@ -31,7 +31,7 @@
   justify-content: center;
   height: 50px;
   width: 210px;
-  color: var(--text-color);
+  color: var(--text-color-white);
   border-radius: 8px;
   text-decoration: none;
   border: 2px solid var(--border-gray);

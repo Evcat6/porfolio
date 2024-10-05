@@ -10,7 +10,7 @@
 .left_title {
   font-size: 24px;
   font-weight: 300;
-  color: var(--text-color);
+  color: var(--text-color-white);
 }
 
 .navigation_container {
@@ -30,7 +30,7 @@
 .navigation_list li a {
   font-size: 18px;
   font-weight: 300;
-  color: var(--text-color);
+  color: var(--text-color-white);
   text-decoration: none;
 }
 
@@ -47,8 +47,8 @@
 
 @media screen and (max-width: 768px) {
   .container {
-    padding: 0 35px;
-    height: 90px;
+    padding: 0 30px;
+    height: 80px;
   }
 
   .left_title {

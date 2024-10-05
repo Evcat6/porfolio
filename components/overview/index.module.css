@@ -5,7 +5,7 @@
 .greeting_title {
   font-size: 16px;
   font-weight: 300;
-  color: var(--text-color);
+  color: var(--text-color-white);
   animation: 0.5s ease-out render;
 }
 
@@ -23,7 +23,7 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  color: var(--text-color);
+  color: var(--text-color-white);
   animation: 1.5s ease-out render;
 }
 
@@ -42,7 +42,7 @@
   font-weight: 300;
   line-height: 22px;
   font-style: normal;
-  color: var(--text-color);
+  color: var(--text-color-white);
 }
 
 .btn_ssh_container {
@@ -62,7 +62,7 @@
 }
 
 .btn_ssh a {
-  color: var(--text-color);
+  color: var(--text-color-white);
   transition: all 120ms ease-in-out;
   font-size: 16px;
 }
@@ -92,7 +92,7 @@
 
 @media screen and (max-width: 768px) {
   .container {
-    padding: 25px 35px 35px 35px;
+    padding: 25px 30px 35px 30px;
   }
 
   .title {

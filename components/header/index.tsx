@@ -24,6 +24,9 @@ const Header = () => {
             <Link href="#contact">Contact</Link>
           </li>
           <li>
+            <Link href="#projects">Projects</Link>
+          </li>
+          <li>
             <a href={envConfig.CV.URL} target="_blank" >CV</a>
           </li>
         </ul>
